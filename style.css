@@ -1,0 +1,64 @@
+
+header ul li{
+    text-align: right;
+    float: right;
+	font-size: 14px;
+	color: #252525;
+	display: inline-block;
+}
+img{
+    align-items: center;
+}
+.hover header ul li  {
+    color: #ff0000;
+}
+header img{
+    border-radius: 5px;
+}
+
+.main {
+    background-color: rgb(229, 230, 231);
+    text-align: center;
+}
+.contact{
+ color: rgb(47, 94, 0);
+ background-color: azure;
+}
+.copyright-text {
+	border-top: 10px solid #303030;
+	padding: 15px;
+	margin-top: 45px;
+    float: right;
+	font-size: 16px;
+	color: #ff0000;
+    background: #303030 ;
+    text-align: center;
+    width: 100%;
+}
+.fade-in {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    background-color: rgb(229, 230, 231);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.link{
+    background-color: rgb(229, 230, 231);
+    text-align: right;
+    text-decoration: double;
+}
+.link2{
+    background-color: azure;
+    text-align: right;
+    text-decoration: double;
+}
