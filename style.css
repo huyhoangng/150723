@@ -1,10 +1,10 @@
 
 header ul li{
     text-align: right;
-    float: right;
 	font-size: 14px;
 	color: #252525;
 	display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
 }
 img{
     align-items: center;
@@ -17,17 +17,19 @@ header img{
 }
 
 .main {
-    background-color: rgb(229, 230, 231);
+    background-color: rgba(229, 230, 231, 0.785);
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .contact{
  color: rgb(47, 94, 0);
  background-color: azure;
+ text-align: center;
 }
 .copyright-text {
 	border-top: 10px solid #303030;
 	padding: 15px;
-	margin-top: 45px;
+	/* margin-top: 45px; */
     float: right;
 	font-size: 16px;
 	color: #ff0000;
@@ -53,7 +55,7 @@ header img{
     }
   }
 .link{
-    background-color: rgb(229, 230, 231);
+    background-color: rgba(229, 230, 231, 0.785);
     text-align: right;
     text-decoration: double;
 }
@@ -62,3 +64,42 @@ header img{
     text-align: right;
     text-decoration: double;
 }
+.email{
+    background-color: azure;
+    
+    padding: 30px;
+}
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    background-color: rgb(229, 230, 231);
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
